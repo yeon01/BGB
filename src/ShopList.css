@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.ShopList {margin: auto; padding-top: 100px; width: 70%;}
+.ShopList > div {float: left; padding: 50px; box-sizing: border-box; width: 40%;}
+.ShopList > div.listInfo {float: right; padding: 70px; width: 50%;}
+.ShopList > div > form > p {margin-bottom: 10px; overflow: hidden; line-height: 35px; width: 100%;}
+.ShopList > div > form > p > span.title {float: left; color: #e2546c; width: 25%;}
+
+.ShopList > div > form > p:first-of-type {margin-bottom: 20px; font-weight: bold; font-size: 1.3rem;}
+.ShopList > div > form > p > span.sale {font-size: 1.8rem; font-weight: bolder; color: #eb2a2a;}
+.ShopList > div > form > p > span.delete {margin-left: 10px; text-decoration: line-through;}
+
+.ShopList > div > form > p.option > div {float: left;}
+.ShopList > div > form > p.option > div > select {padding: 3px; border: 2px solid #888; width: 170%;}
+
+.ShopList > div > form > .layer {padding: 20px 20px 10px; box-sizing: border-box; width: 100%;}
+.ShopList > div > form > .layer > div {display: none; line-height: 27px; border: 1px solid #aaa; padding: 8px; margin-bottom: 10px; box-sizing: border-box; width: 100%;}
+.ShopList > div > form > .layer > div > span {float: left; line-height: 27px; font-size: 0.8rem;}
+.ShopList > div > form > .layer > div > span:first-of-type {width: 40%;}
+.ShopList > div > form > .layer > div > .val {display: inline-block;}
+.ShopList > div > form > .layer > div > .val > button {display: inline-block; margin: 3px; border: 1px solid #aaa; cursor: pointer; line-height: 16px; font-size: 0.6rem; padding: 2px; box-sizing: border-box; height: 20px;}
+.ShopList > div > form > .layer > div > button {float: right; margin-top: 5px; margin-right: 20px; border: 1px solid #888; line-height: 18px; text-align: center; cursor: pointer; width: 20px; height: 20px; background-color: #ddd;}
+
+.ShopList > div > form > .money {padding: 10px 10px 10px 20px; box-sizing: border-box; font-weight: bold; width: 100%; background-color: #eee;}
+.ShopList > div > form > .money > span {margin-left: 100px;}
+
+.ShopList > div > form > .sns {padding: 10px; box-sizing: border-box; width: 100%;}
+.ShopList > div > form > .sns > ul {overflow: hidden; padding: 10px; box-sizing: border-box; width: 100%;}
+.ShopList > div > form > .sns > ul > li {float: left; position: relative; margin-right: 15px; cursor: pointer; overflow: hidden; border-radius: 100%; width: 40px; height: 40px;}
+.ShopList > div > form > .sns > ul > li > img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px;}
+.ShopList > div > form > .sns > ul > li:nth-of-type(2) > img  {width: 100%;}
+
+.ShopList > div > form > div {width: 100%;}
+.ShopList > div > form > div > button {float: left; margin-left: 5%; cursor: pointer; width: 30%; height: 60px; color: #fff; background-color: #e2546c;}
+.ShopList > div > form > div > button:first-of-type {margin-left: 0;}

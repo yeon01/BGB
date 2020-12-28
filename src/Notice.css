@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.Notice {padding: 150px 0; margin: auto; box-sizing: border-box; width: 50%; height: calc(100vh - 150px);}
+.Notice > div {position: relative; float: left; padding: 20px; box-sizing: border-box; cursor: pointer; text-align: center; color: #888; width: calc(100% / 3);}
+.Notice > div.active {color: #fff; background-color: #e2546c;}
+.Notice > div.active > div {display: block;}
+
+.Notice > div > div {display: none; position: absolute; top: 59px; left: 0; width: 300%; background-color: #fff;}
+.Notice > div > div.Qna {left: -100%;}
+.Notice > div > div.Faq {left: -200%;}
+.Notice > div > div > ul {width: 100%;}
+.Notice > div > div > ul > li {width: 100%;}
+.Notice > div > div > ul > li > ul {overflow: hidden; border-top: 2px solid #e2546c; border-bottom: 2px solid #e2546c; width: 100%; background-color: #e2546c8f;}
+.Notice > div > div > ul > li > ul > li {float: left; padding: 15px; box-sizing: border-box; font-weight: bolder; width: calc(100% / 8);}
+.Notice > div > div > ul > li > ul > li:nth-of-type(2) {width: calc(100% / 8 * 4);}
+.Notice > div > div > ul > li > a > ul {overflow: hidden; width: 100%; background-color: #fafafa;}
+.Notice > div > div > ul > li > a > ul > li {float: left; padding: 10px; font-size: 0.9rem; border-bottom: 1px solid #e2546c; box-sizing: border-box; width: calc(100% / 8);}
+.Notice > div > div > ul > li > a > ul > li:nth-of-type(2) {width: calc(100% / 8 * 4);}
+.Notice > div > div > .uploadBtn {margin-top: 20px; width: 100%;}
+.Notice > div > div > .uploadBtn > button {float: right; padding: 8px 25px; cursor: pointer; color: #fff; background-color: #e2546c;}
+
+.Notice > div > div.Faq > ul {border: 2px solid #e2546c; box-sizing: border-box;}
+.Notice > div > div > ul > li > div {overflow: hidden; margin-bottom: 1px; cursor: pointer; padding: 10px; box-sizing: border-box; color: #333; width: 100%; background-color: #e2546c8f;}
+.Notice > div > div > ul > li > div:last-of-type {display: none; cursor: default; background-color: transparent;}
+.Notice > div > div > ul > li > div > span {float: left; font-size: 0.9rem; color: #333;}
+.Notice > div > div > ul > li > div > span.faq {font-weight: bolder; color: #000;}
+.Notice > div > div > ul > li > div > span:last-of-type {margin-left: 10px;}
+.Notice > div > div > ul > li > div:last-of-type > span {color: #333;}

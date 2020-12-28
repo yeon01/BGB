@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.Adpage {padding-top: 150px;}
+.Adpage > div {margin: 0 auto 20px; width: 70%;}
+.Adpage > div > span {display: block; padding: 10px;}
+.Adpage > div > a {float: right; padding: 15px 20px; border-radius: 25px; background-color: #e2546c; color: #fff;}

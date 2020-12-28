@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.EventList {padding: 150px 0; box-sizing: border-box  ; margin: auto; width: 35%;}
+.EventList > ul {margin-top: 50px; overflow: hidden;}
+.EventList > ul > li {padding: 15px; box-sizing: border-box; font-size: 1.2rem; width: 100%;}
+.EventList > ul > li:nth-of-type(2n-1) {background-color: #e2546c8f;}
+.EventList > ul > li > a {display: block; text-align: center; width: 100%;}
+.EventList > ul > li:nth-of-type(2n-1) > a {color: #fff;}
+/* .EventList {padding: 150px 0; box-sizing: border-box; margin: auto; width: 35%; height: calc(100vh - 150px);}
+.EventList > ul {margin-top: 50px; overflow: hidden; border: 2px solid #e2546c}
+.EventList > ul > li {padding: 10px; border-bottom: 1px solid #e2546c; box-sizing: border-box; width: 100%;}
+.EventList > ul > li:last-of-type {border: none;}
+.EventList > ul > li > a {display: block; width: 100%;} */

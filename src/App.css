@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'cookie';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nexon';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {margin: 0; padding: 0; font-family: 'nexon'; text-decoration: none; list-style: none; border: none; color: #333;}
+*:focus {outline: none; border: none;}
+h1,h2 {font-family: 'cookie';}
+body {background-color: #fffefe;}
+header ~ div {min-height: calc(100vh - 150px);}
+
+header {position: fixed; top: 0; left: 0; padding: 10px 15%; z-index: 9999999999; box-sizing: border-box; width: 100vw; background-color: #000;}
+header > h1 {float: left; margin-top: 15px;}
+header > h1 > a > img {width: auto; height: 60px;}
+header > .money {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+header > div > p {font-size: 2rem; padding-left: 15px; border: 2px  #fff; border-style: dotted; letter-spacing: 1rem; line-height: 60px; color: #fff;}
+header > .login {float: right; cursor: pointer;}
+header > div > img {float: left; width: 60px;}
+header > div > span {float: left; line-height: 60px; font-size: 1.5rem; color: #fff;}
+header > .search {float: right; margin-right: -130px; margin-top: 60px;}
+header > div > form > input {padding: 5px 10px; box-sizing: border-box; border: 2px solid #f986f2;}
+header > div > form > input:last-of-type {border: none; padding: 5px; line-height: 19px; background-color: #f986f2;}
+
+.Main > .login_modal {opacity: 0; position: fixed; top: 0; left: 0; z-index: -1; width: 100%; height: 100vh; background-color: rgba(3, 1, 7, 0.774);}
+.Main > .login_modal > .login_box {overflow: hidden; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 12%; background: linear-gradient(0deg, #797cff 0%, #f986f2 100%);}
+.Main > .login_modal > .login_box > .close {position: absolute; top: 7%; right: 7%; z-index: 2; cursor: pointer; font-size: 1.8rem;}
+.Main > .login_modal > .login_box > form {position: absolute; top: 50%; left: 50%; padding: 30px; box-sizing: border-box; transform: translate(-50%, -50%); width: 450px;}
+.Main > .login_modal > .login_box > form > h2 {margin-bottom: 50px; text-align: center;}
+.Main > .login_modal > .login_box > form > p {text-align: center; padding: 10px; line-height: 36px; box-sizing: border-box;}
+.Main > .login_modal > .login_box > form > p:first-of-type,
+.Main > .login_modal > .login_box > form > p:nth-of-type(2) {padding-left: 50px;}
+.Main > .login_modal > .login_box > form > p > input {float: right; padding: 10px 20px 10px 30px; margin-right: 50px;}
+.Main > .login_modal > .login_box > form > p:nth-of-type(3) {width: 100%;}
+.Main > .login_modal > .login_box > form > p:nth-of-type(3) > input {margin: auto; float: initial; font-size: 1rem; cursor: pointer; width: 75%;}
+.Main > .login_modal > .login_box > form > hr {margin: 20px 0 0 0; border: 2px solid #f986f2;}
+.Main > .login_modal > .login_box > form > p > a {float: left; font-size: 0.8rem; width: calc(100% / 3);}
+
+@keyframes loginOnM {
+  from {opacity: 0; z-index: 0;}
+  to {opacity: 1; z-index: 9999;}
+}
+
+@keyframes loginOn {
+  from {opacity: 0; width: 0; height: 0;}
+  to {opacity: 1; width: 430px; height: 580px;}
+}
+@keyframes loginCloseM {
+  from {opacity: 1; z-index: 9999;}
+  to {opacity: 0; z-index: 0;}
+}
+@keyframes loginClose {
+  from {opacity: 1; width: 430px; height: 580px;}
+  to {opacity: 0; width: 0; height: 0;}
+}
+
+
+
+.Main > section {position: relative; padding: 200px 15%; box-sizing: border-box;}
+.Main > section > .banner {}
+.Main > section > .banner > video {position: absolute; top: 0; left: 0; object-fit: fill; width: 100%; height: 100vh;}
+.Main > section > .banner > .bgv {position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background-color: #170b2c49;}
+.Main > section > .banner > .slider {margin-top: 200px;}
+.Main > section > .banner > .slider div span {float: left; line-height: 100px; font-size: 3rem; color: #fff;}
+.Main > section > .banner > .slider div img {float: right; width: 300px; height: 300px !important;}
+.Main > section > .banner .slick-slider .slick-list  {margin-top: -70px;}
+.slick-initialized .slick-slide {padding: 10px; box-sizing: border-box;}
+
+.Main > section > .viewBox {margin-top: 400px;}
+.Main > section > .viewBox > h2 {margin-left: 20px; margin-bottom: 20px;}
+.Main > section > .viewBox .slick-slider {margin-bottom: 100px;}
+.Main > section > .viewBox .slick-slider img {box-shadow: 0px 0px 10px #ddd; width: 247px; height: calc(247px / 3 * 4);}
+.Main > section > .viewBox > a {float: right; margin-top: -100px; padding: 5px 15px; box-sizing: border-box; font-size: 0.8rem;}
+.Main > section > .viewBox .slick-dots {width: auto;}
+.Main > section > .viewBox .slick-dots li button:before {color: #f986f2;}
+.Main > section > .viewBox .slick-dots li.slick-active button:before {color: #797cff;}
+.slick-next:before, .slick-prev:before {color: #f986f2;}              
+.Main > section > .viewBox p {padding: 7px 0; font-weight: bold; font-size: 0.8rem;}
+.Main > section > .viewBox p:first-of-type {padding: 8px; padding-left: 5px; box-sizing: border-box; margin-bottom: 5px; color: #fff; background-color: #e2546c;}
+.Main > section > .viewBox p:nth-of-type(3) {padding: 2px 0; font-size: 1rem;}
+
+
+.Main > section > .gnb {position: fixed; top: 109px; left: -10%; box-sizing: border-box; border: 2px solid #f986f2; background-color: #fff; width: 10%; height: calc(100vh - 109px);}
+.Main > section > .gnb > div {padding: 5px 0 0; margin-top: 20px; line-height: 50px; width: 100%; height: 55px; text-align: center; background-color: #f986f2aa;} 
+.Main > section > .gnb > div > a {color: #fff; font-size: 0.9rem;}
+.Main > section > .gnb > div > a:hover {font-size: 1rem;}
+.Main > section > .gnb > p {margin: 20px auto 10px; padding: 5px 0; text-align: center; font-weight: bold; border: 1px solid #aaa; color: #aaa; width: 90%;}
+.Main > section > .gnb > a {display: block; padding: 10px 0; text-align: center; font-size: 0.8rem;} 
+.Main > section > .gnb > a:hover {color: #f986f2; } 
+.Main > section > .gnb > .hamburger {position: absolute; top: 50%; right: 0px; padding: 20px 5px; cursor: pointer; box-sizing: border-box; transform: translate(100%, -50%); border-top-right-radius: 10%; border-bottom-right-radius: 10%; width: 30px; background-color: #f986f1aa;} 
+.Main > section > .gnb > .hamburger > img {width: 100%;} 
+
+@keyframes gnbOpen {
+  from {left: -10%;}
+  to {left: 0;}
+}
+@keyframes gnbClose {
+  from {left: 0;}
+  to {left: -10%;}
+}
+
+
+footer {padding: 30px 15%; overflow: hidden; box-sizing: border-box; width: 100%; background-color: #000;}
+footer > img {float: left; width: 80px;}
+footer > p {float: left; font-size: 0.8rem; color: #fff;}
+footer > p > strong {color: #fff;}
+
+
+header > a {color: #fff;}

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.Mypage {padding: 150px 0; box-sizing: border-box; margin: auto; width: 35%;}
+.Mypage > h2 {float: left; padding: 5px; box-sizing: border-box; width: 80%; border-bottom: 2px solid #e2546c;}
+.Mypage > .retouch {float: right; padding: 5px; box-sizing: border-box; text-align: right; font-size: 0.8rem; line-height: 60px; box-sizing: border-box; border-bottom: 2px solid #e2546c; width: 20%; height: 45px;}
+
+.Mypage > .myinfo {padding: 40px; margin-top: 50px; box-sizing: border-box;}
+.Mypage > .myinfo > .level {float: left; margin-top: 20px; margin-right: 50px;}
+.Mypage > .myinfo > .level > img {box-shadow:inset 0 0 4px #e2546c8f; width: 150px; height: 150px;}
+.Mypage > .myinfo > p {padding: 10px; box-sizing: border-box; width: 100%;}
+.Mypage > .myinfo > p > span {float: left; font-weight: bolder; width: 15%;}
+.Mypage > .myinfo > p > span:last-of-type {float: right; font-weight: normal; width: 47%;}
+
+.Mypage > .myBtn {overflow: hidden; width: 100%;}
+.Mypage > .myBtn > a {float: left; padding: 15px 0; margin-left: 10%; cursor: pointer; box-sizing: border-box; color: #fff; background-color: #e2546c8f; text-align: center; width: 45%;}
+.Mypage > .myBtn > a:first-of-type {margin-left: 0;}
+.Mypage > .myBtn > a:hover {background-color: #e2546c;}
+.Mypage > .myBtn > a > img {float: left; margin-left: 90px; margin-right: 5px; width: 25px;}
+.Mypage > .myBtn > a > span {float: left; margin-left: 10px; line-height: 23px; margin-top: 2px; font-size: 1.1rem; color: #fff;}
+
+.Mypage > h2:nth-of-type(2) {margin-top: 50px; margin-bottom: 30px; width: 100%;}
+.Mypage > .table {overflow: hidden; width: 100%; height: 800px;}
+.Mypage > .table > div {position: relative; float: left; padding: 20px; box-sizing: border-box; cursor: pointer; text-align: center; color: #888; width: calc(100% / 3);}
+.Mypage > .table > div.active {color: #fff; background-color: #e2546c;}
+.Mypage > .table > div.active > div {display: block;}
+
+.Mypage > .table > div > .shoppingList {display: none; position: absolute; left: 0; top: 58px; padding: 20px; border: 2px solid #e2546c; box-sizing: border-box; width: 300%;}
+.Mypage > .table > div > .shoppingList > ul:first-of-type {overflow: hidden; padding: 5px; box-sizing: border-box; border-bottom: 2px solid #e2546c; width: 100%;}
+.Mypage > .table > div > .shoppingList > ul:first-of-type > li {float: left; font-weight: bolder; width: calc(100% / 6);}
+.Mypage > .table > div > .shoppingList > ul:first-of-type > li:nth-of-type(2) {width: calc(100% / 6 * 3);}
+.Mypage > .table > div > .shoppingList > ul:last-of-type {padding: 10px; box-sizing: border-box;}
+.Mypage > .table > div > .shoppingList > ul:last-of-type > li {width: 100%;}
+.Mypage > .table > div > .shoppingList > ul:last-of-type > li > ul {margin-top: 30px; overflow: hidden; width: 100%;}
+.Mypage > .table > div > .shoppingList > ul:last-of-type > li > ul > li {float: left; width: calc(100% / 6);}
+.Mypage > .table > div > .shoppingList > ul:last-of-type > li > ul > li:nth-of-type(2) {margin-right: 10px; width: calc(100% / 6 * 3 - 10px);}
+.Mypage > .table > div > .shoppingList > ul:last-of-type > li > ul > li > img {float: left; width: 20%;}
+.Mypage > .table > div > .shoppingList > ul:last-of-type > li > ul > li > img + span {margin-left: 2%; width: 78%;}
+.Mypage > .table > div > .shoppingList > ul:last-of-type > li > ul > li > span {float: left; font-size: 0.8rem;}
+.Mypage > .table > div > .shoppingList > a {position: absolute; bottom: 10px; right: 20px; padding: 5px 20px; border-radius: 20px; box-sizing: border-box; color: #fff; background-color: #e2546c;}
+
+.Mypage > .table > div > .card {display: none; position: absolute; left: -100%; top: 58px; cursor: default; padding: 20px; overflow: hidden; border: 2px solid #e2546c; box-sizing: border-box; width: 300%;}
+.Mypage > .table > div > .card > ul {padding: 10px; box-sizing: border-box; width: 100%;}
+.Mypage > .table > div > .card > ul > li {position: relative; float: left; margin-top: 30px; margin-right: 5%; border-radius: 10px; box-shadow:inset 0 0 15px #e2546c; width: calc(90% / 3); height: 120px; background-color: #e2546c8f;}
+.Mypage > .table > div > .card > ul > li:nth-of-type(3n) {margin-right: 0;}
+.Mypage > .table > div > .card > ul > li > p {position: absolute; top: 50%; left: 50%; cursor: pointer; transform: translate(-50%, -50%); border: 1px solid #888; cursor: pointer; line-height: 35px; text-align: center; border-radius: 100%; width: 35px; height: 35px; background-color: #fff;}
+
+.Mypage > .table > div > .cashback {display: none; position: absolute; left: -200%; top: 58px; padding: 20px; border: 2px solid #e2546c; box-sizing: border-box; width: 300%;}
+.Mypage > .table > div > .cashback > form > p {text-align: left; padding: 15px; box-sizing: border-box;}
+.Mypage > .table > div > .cashback > form > p > h3 {margin-bottom: 10px;}
+.Mypage > .table > div > .cashback > form > p:first-of-type > span {display: inline-block; box-sizing: border-box; font-size: 1.2rem; font-weight: bolder; color: #333;}
+.Mypage > .table > div > .cashback > form > p:first-of-type > span:last-of-type {margin-left: 5px; color: #e2546c;}
+.Mypage > .table > div > .cashback > form > p:first-of-type > hr {margin-top: 5px; border: 1px solid #e2546c;}
+.Mypage > .table > div > .cashback > form > p:nth-of-type(2) > span:first-of-type {position: absolute; right: 50px; color: #e2546c; font-size: 1.2rem; font-weight: bolder;}
+.Mypage > .table > div > .cashback > form > p > input {padding: 8px; box-sizing: border-box; border-bottom: 2px solid #888; width: 100%;}
+.Mypage > .table > div > .cashback > form > p > span {font-size: 0.7rem; margin-top: 5px; color: #888;}
+.Mypage > .table > div > .cashback > form > p > select {padding: 5px; box-sizing: border-box; margin-top: 10px; border: 2px solid #888;}
+.Mypage > .table > div > .cashback > form > .cashbackBtn {width: 100%;}
+.Mypage > .table > div > .cashback > form > .cashbackBtn > button {display: block; padding: 15px 0; margin: 20px auto 0; border: 2px solid #e2546c; cursor: pointer; font-size: 1.2rem; width: 80%; background-color: #fff;}
+.Mypage > .table > div > .cashback > form > .cashbackBtn > button:hover {color: #fff; background-color: #e2546c;}

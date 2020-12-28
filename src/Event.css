@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.Event {margin: auto; padding: 120px 0 30px; width: 35%;}
+.Event > p {font-weight: bolder; margin-bottom: 30px; line-height: 40px; text-align: center; border-bottom: 2px solid #e2546c;}
+.Event > a > img {display: block; margin: auto; width: 90%;}
+.Event > a > h2 {margin-top: 20px; text-align: center; font-size: 2.8rem;}
+.Event > span {display: block; padding: 8px; box-sizing: border-box; margin: 40px 0 10px 0; line-height: 30px; color: #fff; width: 100%; background-color: #e2546c8f;}
+.Event .eventSlider img {box-shadow: 0 0 8px #ddd;}
+.Event > .eventList {display: block; margin-top: 70px; padding: 12px 20px; color: #fff; background-color: #e2546c;}

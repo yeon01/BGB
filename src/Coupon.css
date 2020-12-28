@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.Coupon {padding-top: 150px; margin: auto; box-sizing: border-box; width: 50%;}
+.Coupon > ul {overflow: hidden; padding: 20px; margin: 30px 0; border: 3px dotted #fff; box-sizing: border-box; background-color: #e2546c8f;}
+.Coupon > ul > li {float: left; padding: 20px; box-sizing: border-box; margin-left: 5%; width: calc(90% / 3);}
+.Coupon > ul > li:nth-of-type(3n-2) {margin-left: 0;}
+.Coupon > ul > li > div {position: relative; width: 100%;}
+.Coupon > ul > li > div > img {width: 100%;}
+.Coupon > ul > li > div > span:first-of-type {position: absolute; top: 10px; left: 35%; font-size: 0.8rem; font-weight: bolder; color: #f986f2;}
+.Coupon > ul > li > div > span:nth-of-type(2) {position: absolute; top: 50%; left: 40%; transform: translateY(-50%); font-size: 1rem; font-weight: bolder;}
+.Coupon > ul > li > div > span:last-of-type {position: absolute; bottom: 10px; right: 10px; font-size: 0.6rem; color: #888;}

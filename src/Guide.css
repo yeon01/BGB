@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+.boxG {width: 100%; height: 100vh; background-color: #ddd;}
+.boxG > img {position: relative; left: 50%; transform: translateX(-50%); width: 80%;}
+.box.guideMain > img { width: auto; height: calc(100vh - 200px);}

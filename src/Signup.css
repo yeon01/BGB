@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.Signup {padding: 150px 0; box-sizing: border-box; margin: auto; width: 25%;}
+.Signup form {padding: 30px; margin-top: 20px; box-sizing: border-box; border: 2px solid #e2546c;}
+.Signup label {float: left; margin-right: 20px; font-weight: bolder;}
+.Signup input {padding: 10px; margin-top: 10px; margin-bottom: 20px; box-sizing: border-box; width: 100%; background-color: #e2546c3b;}
+.Signup input[type=checkbox] {float: left; margin: 0 10px 0 0; padding: 0; cursor: pointer; width: 20px; height: 20px;}
+.Signup input[type=radio] {float: left; margin: 0 10px 20px 0; padding: 0; cursor: pointer; width: 15px; height: 15px;}
+.Signup div {overflow: hidden; width: 100%;}
+.Signup div.gender {margin-top: 10px;}
+.Signup div.gender label {overflow: hidden; cursor: pointer;}
+.Signup button {float: right; cursor: pointer; padding: 10px 20px;}
+.Signup button:hover {color: #fff; background-color: #e2546c;}
+.Signup span {display: block; padding: 5px 5px 10px; margin-top: -15px; color: #f00; font-size: 0.8rem;}
