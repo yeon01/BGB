@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.Signup {overflow: hidden; padding: 150px 0; box-sizing: border-box; margin: auto; width: 25%;}
+.Signup {overflow: hidden; padding: 150px 0; box-sizing: border-box; margin: auto; width: 500px;}
 .Signup > h2 {float: left;;}
 .Signup > span {float: right; margin-top: 10px; padding: 5px 10px; box-sizing: border-box; font-size: 0.8rem; cursor: pointer; border: 1px solid #e2546c;}
 .Signup > span.active {color: #fff; background-color: #e2546c;}
@@ -15,3 +15,5 @@
 .Signup button {float: right; cursor: pointer; padding: 10px 20px;}
 .Signup button:hover {color: #fff; background-color: #e2546c;}
 .Signup form span {display: block; padding: 5px 5px 10px; margin-top: -15px; color: #f00; font-size: 0.8rem;}
+.Signup form .postBtn {float: right; position: relative; z-index: 1; cursor: pointer; margin-top: -55px; width: 25%; opacity: 1; background-color: #efefef;}
+.Signup form .postBtn:hover {color: #fff; background-color: #e2546c;}

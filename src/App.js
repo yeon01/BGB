@@ -18,22 +18,21 @@ import ScrollTop from "./ScrollTop";
 import Header from './Header';
 import Footer from './Footer';
 import './App.css';
-
-import AppRouter from './component/route/RouterComponent';
-import NavBar from "./component/route/NavBar";
-import Container from '@material-ui/core/Container';
+import axios from 'axios';
 
 
 function App() {
 
   const USER_API_BASE_URL = "http://192.168.0.24:8080";
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    axios.get(`${USER_API_BASE_URL}/users`, 보낼데이터).then(res => setUsers(res.data))
+  //   axios.get(`${USER_API_BASE_URL}`)
+  //         .then(res => console.log(res.data))
+  //         .catch(error => console.log(error))
 
-  }, [])
 
+  // }, []) 
   
   
   return (
