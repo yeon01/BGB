@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import { checkPasswordPattern } from './Validator.js';
-import { checkPasswordPatternSpan } from './Validator.js';
+import { checkPasswordPattern } from './lib/Validator.js';
+import { checkPasswordPatternSpan } from './lib/Validator.js';
 import ClientAddress from './ClientAddress';
 
 const Business = (props) => {

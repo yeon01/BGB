@@ -1,40 +1,10 @@
 import React, {useState} from 'react';
-import axios from 'axios';
-import { checkPasswordPattern } from './Validator.js';
-import { checkPasswordPatternSpan } from './Validator.js';
+import { checkPasswordPattern } from './lib/Validator.js';
+import { checkPasswordPatternSpan } from './lib/Validator.js';
 import UserAddress from './UserAddress';
+import { postUser } from './api/user.api.js';
 
-const Users = (props) => {
-    axios.post('users', {
-            usersName,
-            usersGender,
-            usersId,
-            usersPassword,
-            usersAddressNumber,
-            usersAddress1,
-            usersAddress2
-        })
-        .then(res => console.log(res))
-        .catch(error => console.log(error))
-
-    // axios
-    // axios.post('/user', {
-    //     usersName,
-    //     usersGender,
-    //     usersId,
-    //     usersPassword,
-    //     usersAddressNumber,
-    //     usersAddress1,
-    //     usersAddress2
-    // })
-    //     .then(function (response) {
-    //     console.log(response);
-    // })
-    //     .catch(function (error) {
-    //     console.log(error);
-    // });
-
-
+const Users = (props) => {    
     const [usersName,setUsersName] = useState('');
     const [usersGender,setUsersGender] = useState('');
     const [usersId,setUsersId] = useState('');
@@ -46,9 +16,6 @@ const Users = (props) => {
     const [usersAddressNumber,setUsersAddressNumber] = useState('');
     const [usersAddress1,setUsersAddress1] = useState('');
     const [usersAddress2,setUsersAddress2] = useState('');
-
-    
-
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -63,19 +30,20 @@ const Users = (props) => {
             return setUsersTermError(true);
         }
         if(checkPasswordPattern(usersPassword)) {
-            console.log({
+            const data = {
                 usersName,
                 usersGender,
                 usersId,
                 usersPassword,
-                usersPasswordCheck,
-                usersTerm,
                 usersAddressNumber,
                 usersAddress1,
                 usersAddress2
-            });
-            // 최종적으로 등록완료
-            // axios..... 액션이 일어나는곳
+            };
+            console.log(data);
+            // 회원가입
+            postUser(data)
+                .then(res => console.log(res))
+                .catch(error => console.log(error));
         }
         
     };
@@ -137,7 +105,7 @@ const Users = (props) => {
                     <input className="pw" name="usersPasswordCheck" type="password" placeholder="비밀번호 한번 더 입력하세요." value={usersPasswordCheck} required onChange={onChangePasswordChk} />
                     {usersPasswordError && <div style={{color : 'red'}}>비밀번호가 일치하지 않습니다.</div>}
                 </div>
-                <UserAddress usersAddressNumber={usersAddressNumber} setusersAddressNumber={setUsersAddressNumber} setUsersAddress1={setUsersAddress1} setUsersAddress2={setUsersAddress2} />
+                <UserAddress usersAddressNumber={usersAddressNumber} setUsersAddressNumber={setUsersAddressNumber} setUsersAddress1={setUsersAddress1} setUsersAddress2={setUsersAddress2} />
                 <div>
                     <input type="checkbox" name="userTerm" value={usersTerm} onChange={onChangeTerm} />동의 합니까?
                     {usersTermError && <div style={{color : 'red'}}>약관에 동의하셔야 합니다.</div>}

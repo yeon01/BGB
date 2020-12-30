@@ -2,24 +2,28 @@ import React, {useEffect, useState} from 'react';
 import Users from './Users';
 import Business from './Business';
 import './Signup.css';
-import axios from 'axios';
+import { getTest, lalala } from './api/user.api';
 
 
 
 const Signup = () =>{
 
     const [ active, setActive ] = useState('1');
-    const addActive = (id) => {
-        setActive(id)
-    };
+    const addActive = (id) => setActive(id);
 
-    axios.post('http://192.168.0.24:8080', {
-        id: "root",
-        password: "BGB"
-    })
-
+    // 첫 로딩시 getTest 함수 실행
+    useEffect(() => {
+        getTest("root", "BGB")
+            .then(res => {
+                console.log('성공');
+                console.log(res);
+            })
+            .catch(error => {
+                console.log("실패");
+                console.log(error);
+            });
+    }, [])
     
-
     return (
         <>
         <div className="Signup">

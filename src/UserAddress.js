@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const UserAddress = (props) => {
+    
+    const [ zonecode, setZonecode ] = useState(null);
+
         new daum.Postcode({
             oncomplete: function(data) {
                 //data는 사용자가 선택한 주소 정보를 담고 있는 객체이며, 상세 설명은 아래 목록에서 확인하실 수 있습니다.
@@ -55,32 +58,21 @@ const UserAddress = (props) => {
                     document.getElementById("sample6_address").value = addr;
                     // 커서를 상세주소 필드로 이동한다.
                     document.getElementById("sample6_detailAddress").focus();
+
+                    props.setUsersAddressNumber(data.zonecode);
+                    props.setUsersAddress1(addr);
                 }
             }).open();
         }
 
-
-        const onChangeUsersAddressNumber = (e) => {
-            props.setUsersAddressNumber(e.target.value);
-            console.log(e.target.value);
-        };
-        const onChangeUsersAddress1 = (e) => {
-            props.setUsersAddress1(e.target.value);
-            console.log(e.target.value);
-        };
-        const onChangeUsersAddress2 = (e) => {
-            props.setUsersAddress2(e.target.value);
-            console.log(e.target.value);
-        };
-        
     
     return (
         <>
             <label>주소</label><br/>
-            <input type="text" id="sample6_postcode" change={() => props.setUsersAddressNumber(e.target.value)} placeholder="우편번호" />
+            <input type="text" id="sample6_postcode" placeholder="우편번호" />
             <input type="button" className="postBtn" onClick={sample6_execDaumPostcode} value="우편번호 찾기" /><br />
-            <input type="text" id="sample6_address" onChange={onChangeUsersAddress1} placeholder="주소" /><br />
-            <input type="text" id="sample6_detailAddress" onChange={onChangeUsersAddress2} placeholder="상세주소" />
+            <input type="text" id="sample6_address" placeholder="주소" /><br />
+            <input type="text" id="sample6_detailAddress" onChange={e => props.setUsersAddress2(e.target.value)} placeholder="상세주소" />
             <input type="text" id="sample6_extraAddress" placeholder="참고항목" />
         </>
     )
